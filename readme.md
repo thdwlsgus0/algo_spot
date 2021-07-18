@@ -5,6 +5,7 @@
 - [송진현](https://github.com/thdwlsgus0)
 - [김동용](https://github.com/kingyong9169)
 - [권낙현](https://github.com/knh6269)
+- [신주영](https://github.com/juyeong-chungbuk)
 
 ## 알고리즘스터디 기간
 - 2021.07.19 ~ 
@@ -20,3 +21,12 @@
 - master branch에 pr 요청합니다.
 - pr 요청을 하면 코드리뷰를 통해서 서로의 코드를 공유하고 이해합니다.
 - pr 요청할 때 문제 리뷰를 적어주면 더욱 좋을 것 같습니다.
+
+
+## 문제 리스트
+
+## 해결한 문제
+
+|  | 문제1   | 문제2 | 문제3 | 문제4
+| -------- | ------ | ------------------------------------------- | --------------| ------- |
+| 1주차    | [다트 게임](https://programmers.co.kr/learn/courses/30/lessons/17682) |  [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860)     | [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) | [2016년](https://programmers.co.kr/learn/courses/30/lessons/12901) |
