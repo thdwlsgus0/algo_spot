@@ -35,6 +35,3 @@ console.log(solution(clothes2));
 
 console.log(solution2(clothes1));
 console.log(solution2(clothes2));
-
-console.log(solution3(clothes1));
-console.log(solution3(clothes2));
