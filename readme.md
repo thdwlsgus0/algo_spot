@@ -28,4 +28,4 @@
 |  | 문제1   | 문제2 | 문제3 | 문제4
 | -------- | ------ | ------------------------------------------- | --------------| ------- |
 | 1주차    | [다트 게임](https://programmers.co.kr/learn/courses/30/lessons/17682) |  [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860)     | [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) | [2016년](https://programmers.co.kr/learn/courses/30/lessons/12901) |
-| 2주차 | [비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681) | [더 맵게](https://programmers.co.kr/learn/courses/30/lessons/42626) | [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061) | [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
+| 2주차 | [비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681) | [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) | [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061) | [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
