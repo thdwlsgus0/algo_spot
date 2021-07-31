@@ -1,11 +1,13 @@
-function solution(participant, completion) { // 내 알고리즘
-    const result = participant.reduce((acc, curr) => { // reduce로 객체로 만든다.
+function solution(participant, completion) {
+    const result = participant.reduce((acc, curr) => { 
       acc[curr] = (acc[curr] || 0)+1; 
       return acc;
     }, {})
-    completion.forEach((x)=>result[x]-=1) // forEach로 result[key]를 찾으면 1씩 감소
+    for(const x of completion){
+        result[x]-=1;
+    }
     for(let key in result){
-        if(result[key]!==0) return key; // 0이 아닌 key 반환
+        if(result[key]!==0) return key;
     }
 }
 
