@@ -14,7 +14,7 @@
 - programmers 사이트의 알고리즘 문제를 푸는 것을 목적으로 합니다.
 - 다른 언어보단 자바스크립트 언어를 이용해서 문제를 풉니다.
 - 각자 1문제씩 풀 문제를 가져옵니다. (문제 난이도는 상관 없음)
-- 매주 3문제를 목표로 합니다. (다 못풀었을 경우에는 푼만큼!!)
+- 매주 4문제를 목표로 합니다. (다 못풀었을 경우에는 푼만큼!!)
 
 ## pr 규칙
 - 각자의 이름으로 디렉토리를 만든 후에 문제 풀이한 것을 저장합니다.
@@ -28,3 +28,4 @@
 |  | 문제1   | 문제2 | 문제3 | 문제4
 | -------- | ------ | ------------------------------------------- | --------------| ------- |
 | 1주차    | [다트 게임](https://programmers.co.kr/learn/courses/30/lessons/17682) |  [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860)     | [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) | [2016년](https://programmers.co.kr/learn/courses/30/lessons/12901) |
+| 2주차 | [비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681) | [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) | [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061) | [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
