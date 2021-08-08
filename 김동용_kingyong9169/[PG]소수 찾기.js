@@ -12,7 +12,7 @@ function solution(numbers) {
         }
     }
     numOfCase(numbers.split(''), '')
-    return Array.from(answer).length;
+    return answer.size;
 }
 
 function isPrime(n) {
