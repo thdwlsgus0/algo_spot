@@ -1,21 +1,14 @@
 function solution(N, stages) {
     let answer = [];
     for(let i = 1; i<=N; i++){
-        const reach_num = stages.reduce((acc, cur)=>{
-            if(cur >= i)
-                acc.push(cur);
-            return acc;
-        },[]);
-        const fail_num = stages.reduce((acc, cur)=>{
-            if(cur === i)
-                acc.push(cur);
-            return acc;
-        },[]);
+        const reach_num = stages.filter(x=>(x>=i));
+        const fail_num = stages.filter(x=>(x===i));
         answer.push(fail_num.length/reach_num.length);
     }
 
-    let mapped = answer.map((value, i) => ({index: i, prob: value })).sort((a, b) => (b.prob - a.prob));
-    return mapped.reduce((acc, cur)=>(acc.concat(cur.index + 1)),[]);
+    return answer.map((value, i) => ({index: i, prob: value }))
+        .sort((a, b) => (b.prob - a.prob))
+        .reduce((acc, cur)=>(acc.concat(cur.index + 1)),[]);
 }
 
 function solution2(N, stages) { //다른 사람 풀이
