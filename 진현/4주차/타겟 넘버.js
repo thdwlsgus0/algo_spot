@@ -17,3 +17,5 @@ function solution(numbers, target) {
         dfs(numbers, sum + numbers[next], next+1, target);
     }
 }
+
+console.log(solution([1,1,1,1,1], 3));
