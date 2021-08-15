@@ -11,19 +11,19 @@ function solution(numbers, hand) {
 
   for (let number of numbers) {
     if ([1, 4, 7].includes(number)) {
-      answer = answer.concat("L");
+      answer += "L";
       leftPos = number;
     } else if ([3, 6, 9].includes(number)) {
-      answer = answer.concat("R");
+      answer += "R";
       rightPos = number;
     } else {
       const result = whereisNumber(keyPad, number, leftPos, rightPos);
       result === 0
         ? (hand === "right" ? (rightPos = number) : (leftPos = number),
-          (answer = answer.concat(hand[0].toUpperCase())))
+          (answer += hand[0].toUpperCase()))
         : result < 0
-        ? ((answer = answer.concat("L")), (leftPos = number))
-        : ((answer = answer.concat("R")), (rightPos = number));
+        ? ((answer += "L"), (leftPos = number))
+        : ((answer += "R"), (rightPos = number));
     }
   }
   return answer;
@@ -41,9 +41,8 @@ function whereisNumber(list, num, left, right) {
       if (list[i][j] === "" + right) Right = [i, j];
     }
   }
-  return (
-    Math.abs(Left[0] - Num[0]) +
-    Math.abs(Left[1] - Num[1]) -
-    (Math.abs(Right[0] - Num[0]) + Math.abs(Right[1] - Num[1]))
-  );
+  function absCalc(a, b) {
+    return Math.abs(a[0] - b[0]) + Math.abs(a[1] - b[1]);
+  }
+  return absCalc(Left, Num) - absCalc(Right, Num);
 }
