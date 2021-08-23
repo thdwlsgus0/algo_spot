@@ -6,5 +6,5 @@ function solution(numbers) {
         }
     }
     answer.sort((a,b)=>a-b);
-    return answer.filter((element, index)=>answer.indexOf(element)===index); // 또는 [...new Set(answer)]
+    return answer.filter((element, index, array)=>array.indexOf(element)===index); // 또는 [...new Set(answer)]
 }

@@ -19,8 +19,8 @@ function solution(priorities, location) { // 다른 사람 풀이
         val : t
     }));
     let count = 0;
-    while(1){
-        let cur = list.shift();        
+    while(list.length > 0){
+        const cur = list.shift();        
         if(list.some(t=> t.val > cur.val )){
             list.push(cur);
         }
