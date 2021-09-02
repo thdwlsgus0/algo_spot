@@ -1,5 +1,4 @@
 function solution(num) {
-    let answer = 0;
     let count=0;
     
     while(num!=1){
