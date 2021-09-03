@@ -1,6 +1,6 @@
-function solution(s) { // 테스트 3번 시간 초과, 9번 실패
+function solution(s) {
     let answer = s.length;
-    if(s.length === 1) return 1;
+    if(answer === 1) return 1;
     for(let i = 1; i <= s.length / 2; i++){
         let substr = s.substring(0, i);
         let nextstr = "";
