@@ -5,18 +5,19 @@ function solution(s) {
         let substr = s.substring(0, i);
         let nextstr = "";
         let init = s;
-        let count = 0;
+        let count = 1;
         for(let j = i; j <= init.length; j += i){
             if(substr === init.substring(j, j + i)){ // 반복 O
                 count += 1;
             }
             else{ // 반복 X
                 nextstr = init.substring(j, j + i);
-                if(count !== 0){
-                    const change = count + 1 + substr;
-                    init = init.replace(substr.repeat(count + 1), change);
-                    j = init.indexOf(change) + change.length;
-                    count = 0;
+                if(count !== 1){
+                    const change = count + substr;
+                    const nextj = j - count * i;
+                    init = init.slice(0, nextj) + change + init.slice(j);
+                    j = nextj + change.length;
+                    count = 1;
                 }
                 substr = nextstr;
             }
