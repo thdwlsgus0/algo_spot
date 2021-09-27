@@ -36,3 +36,4 @@
 | 7주차 | [캐시](https://programmers.co.kr/learn/courses/30/lessons/17680) | [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057) | [H-Index](https://programmers.co.kr/learn/courses/30/lessons/42747) | [콜라츠 추측](https://programmers.co.kr/learn/courses/30/lessons/12943)
 | 8주차 | [메뉴리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) | [거리두기 확인하기](https://programmers.co.kr/learn/courses/30/lessons/81302)
 | 9주차(추석) | [최소공배수](https://programmers.co.kr/learn/courses/30/lessons/12953) | [최댓값과 최솟값](https://programmers.co.kr/learn/courses/30/lessons/12939)
+| 10주차 | [괄호변환](https://programmers.co.kr/learn/courses/30/lessons/60058) | [뉴스 클러스터링](https://programmers.co.kr/learn/courses/30/lessons/17677)
