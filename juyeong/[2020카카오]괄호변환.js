@@ -16,14 +16,7 @@ const check = (u) => { // 올바른 괄호 문자열인지 판단
 };
 
 const rever = (u) => { // 괄호 반전
-  let new_u = "";
-  u.map((x, idx) => {
-    if (idx !== 0 && idx !== u.length - 1) {
-      if (x === "(") new_u += ")";
-      else new_u += "(";
-    }
-  });
-  return new_u;
+    return u.slice(1, u.length - 1).split("").map((x) => (x === "(" ? ")" : "(")).join("");
 };
 
 const separate = (p) => { // 괄호 분리
@@ -39,7 +32,7 @@ const separate = (p) => { // 괄호 분리
       v = p.join("").substring(idx + 1, p.length);
 
       if (check(u.split(""))) return u + separate(v.split(""));
-      else return "(" + separate(v.split("")) + ")" + rever(u.split(""));
+      else return "(" + separate(v.split("")) + ")" + rever(u);
     }
   }
   return u;
