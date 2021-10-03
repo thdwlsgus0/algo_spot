@@ -1,7 +1,7 @@
 function solution(p) {
     let u, v;
     let lparam = 0, rparam = 0;
-    if(p === "") return p;
+    if(p === '') return p;
     function separate(elem){
         elem === '(' ? lparam += 1 : rparam += 1;
         return lparam === rparam;
@@ -15,19 +15,8 @@ function solution(p) {
         lparam = 0;
         rparam = 0;
     }
-    if(isRight(u)) return u + solution(v);
+    if(u[0] === '(' && u[u.length - 1] === ')') return u + solution(v);
     else return '(' + solution(v) + ')' + 
-            u.slice(1, u.length -1).replace(/\(|\)/g , a => a === '(' ? ')' : '(');
+            u.slice(1, u.length -1).replace(/\(|\)/g , a=>a === '(' ? ')' : '(');
     // u.slice(1, u.length - 1).split('').map((elem) => elem === '(' ? ')' : '(').join('');
-}
-
-function isRight(u){
-    while(u !== ''){
-        if(u[0] !== '(' && u[u.length - 1] !== ')') return false;
-        else {
-            u = u.slice(1, u.length - 1);
-            if(u[0] === ')' && u[u.length - 1] === '(') return true;
-        }
-    }
-    return true;
 }
