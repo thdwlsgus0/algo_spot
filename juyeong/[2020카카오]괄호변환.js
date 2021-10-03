@@ -14,11 +14,9 @@ const check = (u) => { // 올바른 괄호 문자열인지 판단
   }
   return true;
 };
-
 const rever = (u) => { // 괄호 반전
     return u.slice(1, u.length - 1).split("").map((x) => (x === "(" ? ")" : "(")).join("");
 };
-
 const separate = (p) => { // 괄호 분리
   let openCnt = 0;
   let closeCnt = 0;
@@ -30,14 +28,12 @@ const separate = (p) => { // 괄호 분리
     if (openCnt === closeCnt) {
       u = p.join("").substring(0, idx + 1);
       v = p.join("").substring(idx + 1, p.length);
-
       if (check(u.split(""))) return u + separate(v.split(""));
       else return "(" + separate(v.split("")) + ")" + rever(u);
     }
   }
   return u;
 };
-
 function solution(p) {
   if (check(p)) return p;
   return separate(p.split(""));
