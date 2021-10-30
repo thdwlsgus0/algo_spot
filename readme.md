@@ -37,3 +37,4 @@
 | 8주차 | [메뉴리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) | [거리두기 확인하기](https://programmers.co.kr/learn/courses/30/lessons/81302)
 | 9주차(추석) | [최소공배수](https://programmers.co.kr/learn/courses/30/lessons/12953) | [최댓값과 최솟값](https://programmers.co.kr/learn/courses/30/lessons/12939)
 | 10주차 | [괄호변환](https://programmers.co.kr/learn/courses/30/lessons/60058) | [뉴스 클러스터링](https://programmers.co.kr/learn/courses/30/lessons/17677)
+| 11주차 | [괄호 회전하기](https://programmers.co.kr/learn/courses/30/lessons/76502) | [수식 최대화](https://programmers.co.kr/learn/courses/30/lessons/67257)
