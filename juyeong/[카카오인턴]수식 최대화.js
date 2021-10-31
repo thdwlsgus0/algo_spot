@@ -8,7 +8,6 @@ function solution(expression) {
     ["*", "+", "-"],
   ];
   const result = [];
-
   for (let subp of prio) {
     const temp = expression.split(/(\D)/);
     for (let op of subp) {
