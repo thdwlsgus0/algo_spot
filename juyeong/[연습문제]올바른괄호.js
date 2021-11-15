@@ -7,6 +7,5 @@ function solution(s) {
       continue;
     }
     stack.push(bracket);
-  }
-  return stack.length !== 0 ? false : true;
+  } return stack.length !== 0 ? false : true;
 }
