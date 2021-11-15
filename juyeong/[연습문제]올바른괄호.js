@@ -8,6 +8,5 @@ function solution(s) {
     }
     stack.push(bracket);
   }
-  if (stack.length !== 0) return false;
-  else return true;
+  return stack.length !== 0 ? false : true;
 }
