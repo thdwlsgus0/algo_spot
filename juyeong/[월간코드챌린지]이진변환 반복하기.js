@@ -7,6 +7,5 @@ function solution(s) {
         zerocnt += (slen - s.length);
         s = s.length.toString(2);
         BTcnt++;
-    }
-    return [BTcnt, zerocnt];
+    } return [BTcnt, zerocnt];
 }
