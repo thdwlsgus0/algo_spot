@@ -39,3 +39,5 @@
 | 10주차 | [괄호변환](https://programmers.co.kr/learn/courses/30/lessons/60058) | [뉴스 클러스터링](https://programmers.co.kr/learn/courses/30/lessons/17677)
 | 11주차 | [괄호 회전하기](https://programmers.co.kr/learn/courses/30/lessons/76502) | [수식 최대화](https://programmers.co.kr/learn/courses/30/lessons/67257)
 | 12주차 | [3차 압축](https://programmers.co.kr/learn/courses/30/lessons/17684) | [튜플](https://programmers.co.kr/learn/courses/30/lessons/64065)
+| 13주차 | [이진 변환 반복하기](https://programmers.co.kr/learn/courses/30/lessons/70129) | [올바른 괄호](https://programmers.co.kr/learn/courses/30/lessons/12909)
+| 14주차 | [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) | [멀쩡한 사각형](https://programmers.co.kr/learn/courses/30/lessons/62048)
