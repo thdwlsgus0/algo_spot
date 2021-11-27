@@ -56,3 +56,34 @@ function solution(N, road, K) {
 
 console.log(solution(5, [[1,2,1],[2,3,3],[5,2,2],[1,4,2],[5,3,1],[5,4,2]], 3));
 console.log(solution(6, [[1,2,1],[1,3,2],[2,3,2],[3,4,3],[3,5,2],[3,5,3],[5,6,1]], 4));
+
+
+function solution2(N, road, K) {
+	const dist = Array(N).fill(Infinity);
+    const arr = Array.from({ length: N}, () => []);
+
+	road.forEach(([a,b,c]) => {
+		arr[a-1].push({to: b-1, value: c});
+		arr[b-1].push({to: a-1, value: c});
+	});
+	
+	const pq = [];
+	pq.push({to: 0, value: 0});
+	dist[0] = 0;
+	
+	while(pq.length > 0) {
+		let {to, value} = pq.pop();
+
+		for(let i = 0; i < arr[to].length; i++) {
+			if(dist[arr[to][i].to] > dist[to] + arr[to][i].value) {
+				dist[arr[to][i].to] = dist[to] + arr[to][i].value;
+				pq.push(arr[to][i]);
+			}
+		}
+	}
+
+	return dist.filter((item) => item <= K ).length;
+}
+
+console.log(solution2(5, [[1,2,1],[2,3,3],[5,2,2],[1,4,2],[5,3,1],[5,4,2]], 3));
+console.log(solution2(6, [[1,2,1],[1,3,2],[2,3,2],[3,4,3],[3,5,2],[3,5,3],[5,6,1]], 4));
