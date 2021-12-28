@@ -42,4 +42,5 @@
 | 13주차 | [이진 변환 반복하기](https://programmers.co.kr/learn/courses/30/lessons/70129) | [올바른 괄호](https://programmers.co.kr/learn/courses/30/lessons/12909)
 | 14주차 | [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) | [멀쩡한 사각형](https://programmers.co.kr/learn/courses/30/lessons/62048)
 | 15주차 | [스킬트리](https://programmers.co.kr/learn/courses/30/lessons/49993) | [배달](https://programmers.co.kr/learn/courses/30/lessons/12978)
-| 16주차 | [땅따먹기](https://programmers.co.kr/learn/courses/30/lessons/12913) | [3차 n진수 게임](https://programmers.co.kr/learn/courses/30/lessons/17687) 
+| 16주차 | [땅따먹기](https://programmers.co.kr/learn/courses/30/lessons/12913) | [3차 n진수 게임](https://programmers.co.kr/learn/courses/30/lessons/17687)
+| 17주차 | [프렌즈4블록](https://programmers.co.kr/learn/courses/30/lessons/17679) | [예상 대진표](https://programmers.co.kr/learn/courses/30/lessons/12985)
