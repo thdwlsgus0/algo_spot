@@ -1,3 +1,31 @@
+function solution(N, road, K) { // 우선순위 큐
+    const pq = [];
+    const dist = Array(N).fill(Infinity);
+    const graph = Array.from(Array(N), () => new Array(N).fill(0)).map((x, i)=>x.map((y, j)=>{if(i === j) return 0; else return Infinity;}));
+    
+    road.forEach(([a, b, w]) => {
+        if(graph[a-1][b-1] > w) graph[a-1][b-1] = w;
+        if(graph[b-1][a-1] > w) graph[b-1][a-1] = w;
+    });
+    
+    dist[0] = 0;
+    pq.push([0, 0]);
+    while(pq.length > 0){
+        const [node, weight] = pq.pop();
+        if(dist[node] < weight) continue;
+
+        for(let i=0; i<N; i++){
+            const nextWeight = graph[node][i];
+            if(dist[i] > weight + nextWeight){
+                dist[i] = weight + nextWeight;
+                pq.push([i, dist[i]]);
+            }
+        }
+    }
+    return dist.filter((v)=> v<=K).length;
+}
+
+// 선형탐색
 let n = 0;
 let distance = [];  // 시작 위치로부터 각 마을까지 최소길이
 let visited = [];   // 방문한 마을
@@ -42,3 +70,4 @@ function solution(N, road, K) {
     dijkstra(0);    // 시작위치 0에서 다익스트라 시작
     return distance.reduce((acc, curr)=>acc+(curr <= K), 0);    // K시간 이하 개수 리턴
 }
+
