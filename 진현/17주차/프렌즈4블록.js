@@ -3,10 +3,10 @@ const isCheck = (i, j, board) => {
 }
 
 const accumulateSet = (i, j, answerSet) => {
-    answerSet.add(`${i},${j}`);
-    answerSet.add(`${i+1},${j}`);
-    answerSet.add(`${i},${j+1}`);
-    answerSet.add(`${i+1},${j+1}`);
+    answerSet.add([i, j]);
+    answerSet.add([i+1, j]);
+    answerSet.add([i, j+1]);
+    answerSet.add([i+1, j+1]);
     return answerSet;
 }
 
@@ -42,10 +42,9 @@ const checkGraph = (m, n, board) => {
         if(answerSet.size === 0) break;
         else answer += answerSet.size;
         
-        answerSet.forEach((item) => {
-            const [row, col] = item.split(',');
-            board[row][col] = 0;
-        })
+        for(let x of [...answerSet]) {
+            board[x[0]][x[1]] = 0;
+        }
         
         answerSet.clear();
         
