@@ -1,95 +1,38 @@
-const valid = (x) => x < 5 ? true : false;
-
-function solution(places) {
-    let answer = [];
-    let flag = true;
-    for(let i = 0; i < 5; i++){
-        for(let j = 0; j < 5; j++){
-            for(let k = 0; k < 5; k++){
-                if(places[i][j][k] === 'P'){
-                    if(valid(k+1) && valid(j+1)){
-                        if(places[i][j][k+1] === 'P' || places[i][j+1][k] === 'P'){
-                            answer.push('0');
-                            flag = false;
-                            i += 1;
-                        }
-                        if(places[i][j][k+1] === '0'){
-                            if(valid(k+2)){
-                               if(places[i][j][k+2] === 'P' || places[i][j+1][k+1] === 'P'){
-                                    answer.push('0');
-                                    flag = false;
-                                    i += 1;
-                                }
-                            }
-                        }
-                        if(places[i][j+1][k] === '0'){
-                            if(valid(k+2)){
-                                if(places[i][j+2][k] === 'P' || places[i][j+1][k+1] === 'P'){
-                                    answer.push('0');
-                                    flag = false;
-                                    i += 1;
-                                }
-                            }
-                        }
-                    }
+function findP(place, pArr){
+    for(let i = 0 ; i < 5 ; i++){
+        for(let j = 0 ; j < 5 ; j++){
+            if(place[i][j] === "P") pArr.push('' + i + j);
+        }
+    }
+    
+    for(const p of pArr.values()){
+        for(const q of pArr.values()){
+            if(p === q) continue;
+            
+            const manhattanX = Math.abs(p[0] - q[0]);
+            const manhattanY = Math.abs(p[1] - q[1]);
+            const middleX = (+p[0]) + (+q[0]);
+            const middleY = (+p[1]) + (+q[1]);
+            
+            if(manhattanX + manhattanY <= 2){
+                if(manhattanX + manhattanY === 2){
+                    if(middleX % 2 === 1 && (place[p[0]][q[1]] === "O" || place[q[0]][p[1]] === "O")) return 0;
+                    if(middleX % 2 === 0 && (place[middleX / 2][middleY / 2] === "O")) return 0;
                 }
-                else if(places[i][j][k] === '0'){
-                    if(places[i][j][k+1] === 'P' && places[i][j+1][k] === 'P'){
-                        answer.push('0');
-                        flag = false;
-                        i += 1;
-                    }
-                    if(places[i][j][k+1] === 'P'){
-                        if(valid(k+2)){
-                            if(places[i][j][k+2] === 'P' || places[i][j+1][k+1] === 'P'){
-                                answer.push('0');
-                                flag = false;
-                                i += 1;
-                            }
-                        }
-                    }
-                    if(places[i][j+1][k] === 'P'){
-                        if(valid(k+2)){
-                            if(places[i][j+2][k] === 'P' || places[i][j+1][k+1] === 'P'){
-                                answer.push('0');
-                                flag = false;
-                                i += 1;
-                            }
-                        }
-                    
-                    }
-                }
-                else if(places[i][j][k] === 'X'){
-                    if(places[i][j][k+1] === 'P' && places[i][j+1][k] === 'P'){
-                        if(places[i][j+1][k+1] === 'P'){
-                            answer.push('0');
-                            flag = false;
-                            i += 1;
-                        }
-                    }
-                    if(places[i][j][k+1] === 'P'){
-                        if(valid(k+2)){
-                            if(places[i][j][k+2] === 'P'){
-                                answer.push('0');
-                                flag = false;
-                                i += 1;
-                            }
-                        }
-                    }
-                    if(places[i][j+1][k] === 'P'){
-                        if(valid(k+2)){
-                            if(places[i][j+2][k] === 'P'){
-                                answer.push('0');
-                                flag = false;
-                                i += 1;
-                            }
-                        }
-                    }
-                }
+                else return 0;
             }
         }
-        if(flag) answer.push('1');
-        flag = true;
+    }
+    return 1;
+}
+
+function solution(places) {
+    const pArr = [];
+    let answer = [];
+    
+    for(const place of places){
+        answer.push(findP(place, pArr));
+        pArr.length = 0;
     }
     return answer;
 }
