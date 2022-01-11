@@ -45,3 +45,4 @@
 | 16주차 | [땅따먹기](https://programmers.co.kr/learn/courses/30/lessons/12913) | [3차 n진수 게임](https://programmers.co.kr/learn/courses/30/lessons/17687)
 | 17주차 | [프렌즈4블록](https://programmers.co.kr/learn/courses/30/lessons/17679) | [예상 대진표](https://programmers.co.kr/learn/courses/30/lessons/12985)
 | 18주차 | [후보키](https://programmers.co.kr/learn/courses/30/lessons/42890) | [영어 끝말잇기](https://programmers.co.kr/learn/courses/30/lessons/12981)
+| 19주차 | [바이러스](https://www.acmicpc.net/problem/2606) | [연구소](https://www.acmicpc.net/problem/14502) | [가장 먼 노드](https://programmers.co.kr/learn/courses/30/lessons/49189)
