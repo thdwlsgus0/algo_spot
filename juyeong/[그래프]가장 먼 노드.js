@@ -20,11 +20,10 @@ function bfs(n, graph) {
 
 function solution(n, edge) {
     const graph = Array.from({ length: n+1 }, () => Array());
-    for(const e of edge) {
-        const startNode = e[0];
-        const endNode = e[1];
-        graph[startNode].push(endNode);
-        graph[endNode].push(startNode);
+    for(let i = 0 ; i < edge.length ; i++){
+        const [start, end] = edge[i]
+        graph[start].push(end);
+        graph[end].push(start);
     }
     return bfs(n, graph);
 }
