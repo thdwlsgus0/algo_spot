@@ -22,12 +22,10 @@ function dfs(graph) {
 }
   
 const fs = require('fs');
-let input = fs.readFileSync('juyeong/BOJ/2606/a.txt').toString().trim().split('\n');
+const input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 
 const N = input[0];
 const arr = [];
-for (let i = 2; i <= N; i++) {
-    arr.push(input[i].split(' ').map((el) => +el));
-}
+for(let i = 2 ; i < input.length ; i++) arr.push(input[i].split(' ').map((v) => +v));
 
-console.log(solution(N, arr));
+solution(N, arr);
