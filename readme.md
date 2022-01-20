@@ -1,6 +1,6 @@
 
 # 알고리즘 공부하기
- 
+
 ## 스터디원
 - [송진현](https://github.com/thdwlsgus0)
 - [김동용](https://github.com/kingyong9169)
@@ -8,9 +8,9 @@
 - [신주영](https://github.com/juyeong-chungbuk)
 
 ## 알고리즘스터디 기간
-- 2021.07.19 ~ 
+- 2021.07.19 ~
 
-## 스터디 규칙 
+## 스터디 규칙
 - programmers 사이트의 알고리즘 문제를 푸는 것을 목적으로 합니다.
 - 다른 언어보단 자바스크립트 언어를 이용해서 문제를 풉니다.
 - 각자 1문제씩 풀 문제를 가져옵니다. (문제 난이도는 상관 없음)
@@ -46,3 +46,4 @@
 | 17주차 | [프렌즈4블록](https://programmers.co.kr/learn/courses/30/lessons/17679) | [예상 대진표](https://programmers.co.kr/learn/courses/30/lessons/12985)
 | 18주차 | [후보키](https://programmers.co.kr/learn/courses/30/lessons/42890) | [영어 끝말잇기](https://programmers.co.kr/learn/courses/30/lessons/12981)
 | 19주차 | [바이러스](https://www.acmicpc.net/problem/2606) | [연구소](https://www.acmicpc.net/problem/14502) | [가장 먼 노드](https://programmers.co.kr/learn/courses/30/lessons/49189)
+| 20주차 | [rgb 거리](https://www.acmicpc.net/problem/1149) | [Dance Dance Revolution](https://www.acmicpc.net/problem/2342) | [N으로 표현](https://programmers.co.kr/learn/courses/30/lessons/42895)
