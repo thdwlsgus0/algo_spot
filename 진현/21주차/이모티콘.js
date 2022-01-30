@@ -3,7 +3,7 @@ const filePath = process.platform === 'linux'? '/dev/stdin' : './input.txt';
 const input = fs.readFileSync(filePath).toString().trim().split('\n');
 
 const n = +input[0];
-const MAX_SIZE = 2001;
+const MAX_SIZE = 1001;
 
 const visited = Array.from(new Array(MAX_SIZE), () => new Array(MAX_SIZE));
 
